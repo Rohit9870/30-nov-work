@@ -16,6 +16,10 @@ class Coin{
         return value==HEADS;
     }
     
+    public boolean isTails(){
+        return value!=HEADS;
+    }
+    
     
     public String toString(){
         if(value==HEADS){
@@ -34,6 +38,7 @@ public class solution{
             myCoin.flip();
             System.out.println(myCoin);
             System.out.println(myCoin.isHeads());
+            System.out.println(myCoin.isTails());
         }
     }
 }
